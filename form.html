@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+ <form action="#">
+    <fieldset>
+        <legend>Общая информация</legend>
+        <div>
+            <label for="uname">Введите имя:</label>
+            <input type="text" id="uname" name="name" placeholder="Имя" autocomplete="on"> 
+            <label for="date">Дата рождения:</label>
+            <input type="date" id="date" name="date" placeholder="Введите дату" autocomplete="on"> 
+        </div>     
+    </fieldset>
+
+    <fieldset>
+        <legend>Контактная информация</legend>
+        <div>
+            <label for="phone">Введите телефон:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+375-29-1111111" autocomplete="on">
+            <label for="email">Введите email:</label>
+            <input type="email" id="email" name="email" placeholder="mail@mail.ru" autocomplete="on">  
+        </div>     
+    </fieldset>
+
+    <fieldset>
+        <legend>Хобби</legend>
+        <div>
+            <input type="radio" id="1" name="react" value="react">
+            <label for="1">react</label>
+        
+            <input type="radio" id="2" name="html" value="html">
+            <label for="2">html</label>
+            
+            <input type="radio" id="3" name="CSS" value="CSS">
+            <label for="3">CSS</label>
+           
+            <input type="radio" id="4" name="JS" value="JS">
+            <label for="4">JS</label>
+        </div>     
+    </fieldset>
+
+    <fieldset>
+        <legend>Что выберешь?</legend>
+        <div>
+            <label for="5">React</label>
+            <input type="checkbox" id="5" name="React">
+
+            <label for="6">Angular</label>
+            <input type="checkbox" id="6" name="Angular">
+
+            <label for="7">Vue</label>
+            <input type="checkbox" id="7" name="Vue">
+        </div>     
+    </fieldset>
+
+    <fieldset>
+        <legend>Срок обучения</legend>
+        <div>
+            <input type="range">
+        </div>     
+    </fieldset>
+
+    <fieldset>
+        <legend>Дополнительно</legend>
+        <div>
+            <label for="8">Отправить файл</label>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+        </div>     
+    </fieldset>
+
+    <div>
+    <input type="submit" value="Отправка формы">
+    <input type="reset" value="Сбросить">
+    </div>
+
+ </form>   
+</body>
+</html>
